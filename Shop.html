@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+        <!-- CSS FILES -->             
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Protest+Guerrilla&family=Protest+Revolution&display=swap" rel="stylesheet">
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #EBD9B4;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 60%;
+}
+
+header.masthead2 {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("https://images.squarespace-cdn.com/content/v1/5c1074accc8fed6a4251da8f/1600955864112-1U4PUZ3NH38QQND4717Y/Fabulous+coconut+milk+.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead2 h1, header.masthead .h1 {
+  font-size: 2.25rem;
+}
+@media (min-width: 992px) {
+  header.masthead2 {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.masthead2 p {
+    font-size: 1.15rem;
+  }
+  header.masthead2 h1, header.masthead .h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead2 h1, header.masthead .h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.text-center {
+	text-align: center;
+}
+
+.pricing-box-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+.pricing-box {
+	background-color: #ffffff;
+	box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+	border-radius: 4px;
+	flex: 1;
+	padding: 0 30px 30px;
+	margin: 2%;
+	min-width: 250px;
+	max-width: 350px;
+  background-image: url('https://images.unsplash.com/photo-1620752420341-4cd7642568dd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29jb251dCUyMHdhdGVyfGVufDB8fDB8fHww');
+}
+
+.pricing-box h5 {
+	text-transform: uppercase;
+}
+
+.price {
+	margin: 24px 0;
+	font-size: 36px;
+	font-weight: 900;
+}
+
+.price sub, .price sup {
+	font-size: 16px;
+	font-weight: 100;
+}
+
+.features-list {
+	padding: 0;
+	list-style-type: none;
+}
+
+.features-list li {
+	font-weight: 100;
+	padding: 12px 0;
+	font-weight: 100;
+}
+
+.features-list li:not(:last-of-type) {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+	border-radius: 25px;
+	border: none;
+	background-color: #294B29;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 10px 15px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	transition: all 0.1s ease-in-out;
+}
+
+.btn-primary:hover {
+	box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+	transform: translateY(-3px);
+}
+
+.pricing-box-bg-image4 {
+  background-image: url('https://plus.unsplash.com/premium_photo-1661455973687-41bfd69980eb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNvY29udXQlMjBjcmVhbXxlbnwwfHwwfHx8MA%3D%3D');
+	background-size: cover;
+	background-position: center center;
+	color: #ffffff;
+}
+
+.pricing-box-bg-image {
+	background-image: url('https://images.unsplash.com/photo-1588413335367-e49d32c5b50b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29jb251dCUyMG1pbGt8ZW58MHx8MHx8fDA%3D');
+	background-size: cover;
+	background-position: center center;
+	color: #ffffff;
+}
+
+.pricing-box-bg-image .features-list li {
+	border-bottom-color: rgba(255, 255, 255, 1);
+}
+
+.pricing-box-bg-image .btn-primary {
+	background-color: #ffffff;
+	color: #000;
+}
+
+footer {
+	background-color: #222;
+	color: #fff;
+	font-size: 14px;
+	bottom: 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+footer p {
+	margin: 10px 0;
+}
+
+footer i {
+	color: red;
+}
+
+footer a {
+	color: #3C97BF;
+	text-decoration: none;
+}
+</style>
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" style="background-color: #EBD9B4;">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top" style="font-family: 'Protest Revolution', sans-serif; font-size: 50px;color: #000;">PURE GROVE</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#shop" style="font-family: 'Protest Guerrilla', sans-serif; font-size: 30px; color: #294B29;
+                        ">Shop</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead2" style="background-color: #EBD9B4">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    
+                    <h1 class="text-white font-weight-bold" style="font-family: 'Protest Revolution', sans-serif; color: #294B29;">Our Products</h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">At Pure Grove®, we offer a diverse range of high-quality products designed to meet the needs and preferences of our valued customers. From skincare essentials to gourmet treats, each product is crafted with care and attention to detail. Here's a glimpse of what you can expect from our product lineup:</p>
+            
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+    <div class="container" style="text-align: center; padding-top: 200px; height: 200px; ">
+      <h1 class="text-center" style="font-family: 'Protest Guerrilla', sans-serif; padding-bottom: 100px !important; color: #294B29;">Our Product Prices</h1>
+
+      <div class="pricing-box-container">
+        <div class="pricing-box text-center">
+          <h5 style="padding-top: 30px; font-family: 'Protest Revolution', sans-serif;color: #000;">Coconut Water</h5>
+          <p class="price" style="color: #fff;"><sup>$</sup>0<sub></sub></p>
+          <p></p>
+          <button class="btn-primary" style="font-family: 'Protest Revolution', sans-serif;">Buy Now</button>
+        </div>
+      
+        <div class="pricing-box pricing-box-bg-image6 text-center" style="background-image: url('https://images.pond5.com/super-slow-motion-shot-milk-footage-149996385_iconl.jpeg');">
+          <h5 style="padding-top: 30px; font-family: 'Protest Revolution', sans-serif;color: #000;">CoConut Milk</h5>
+          <p class="price" style="color: #000;"><sup>$</sup>39<sub></sub></p>
+         <p></p>
+          <button class="btn-primary" style="font-family: 'Protest Revolution', sans-serif;">Buy Now</button>
+        </div>
+
+        <div class="pricing-box pricing-box-bg-image4 text-center">
+          <h5 style="padding-top: 30px; font-family: 'Protest Revolution', sans-serif;color: #000;">CoConut Cream</h5>
+          <p class="price" style="color: #000;"><sup>$</sup>89<sub></sub></p>
+         <p></p>
+          <button class="btn-primary" style="font-family: 'Protest Revolution', sans-serif;">Buy Now</button>
+        </div>
+
+        <div class="pricing-box pricing-box-bg-image1 text-center" style="background-image: url('https://images.unsplash.com/photo-1588413333412-82148535db53?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29jb251dCUyMG9pbHxlbnwwfHwwfHx8MA%3D%3D');">
+          <h5 style="padding-top: 30px; font-family: 'Protest Revolution', sans-serif;color: #fff;">Coconut Oil</h5>
+          <p class="price" style="color: #000;"><sup>$</sup>34<sub></sub></p>
+          
+          <button class="btn-primary" style="font-family: 'Protest Revolution', sans-serif;">Buy Now</button>
+        </div>
+      
+        <div class="pricing-box pricing-box-bg-image2 text-center" style="background-image: url('https://www.shutterstock.com/image-photo/health-content-coconut-half-flour-260nw-1646886430.jpg');">
+          <h5 style="padding-top: 30px; font-family: 'Protest Revolution', sans-serif;color: #000;">Coconut Flour</h5>
+          <p class="price"><sup>$</sup>29<sub</sub></p>
+         
+          <button class="btn-primary" style="font-family: 'Protest Revolution', sans-serif;">Buy Now</button>
+        </div>
+      
+        <div class="pricing-box pricing-box-bg-image3 text-center" style="background-image: url('https://cdn.shopify.com/s/files/1/0350/4495/0154/files/0001-17571057814_20220128_044530_0000_480x480.png?v=1643346942');">
+          <h5 style="padding-top: 30px; font-family: 'Protest Revolution', sans-serif;color: #000;">Coconut Butter</h5>
+          <p class="price"><sup>$</sup>67<sub></sub></p>
+
+          <button class="btn-primary" style="font-family: 'Protest Revolution', sans-serif;">Buy Now</button>
+        </div>
+
+        <div class="pricing-box pricing-box-bg-image3 text-center" style="background-image: url('https://thecoconutcoop.com/wp-content/uploads/2020/02/Toasted-chip-Primary.jpg');">
+          <h5 style="padding-top: 30px; font-family: 'Protest Revolution', sans-serif;color: #000;">Coconut Chips</h5>
+          <p class="price"><sup>$</sup>54<sub></sub></p>
+
+          <button class="btn-primary" style="font-family: 'Protest Revolution', sans-serif;">Buy Now</button>
+        </div>
+      
+        <div class="pricing-box pricing-box-bg-image3 text-center" style="background-image: url('data:image/jpeg;base64,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');">
+          <h5 style="padding-top: 30px; font-family: 'Protest Revolution', sans-serif;color: #000;">Coconut Chocolate</h5>
+          <p class="price"><sup>$</sup>98<sub></sub></p>
+
+          <button class="btn-primary" style="font-family: 'Protest Revolution', sans-serif;">Buy Now</button>
+        </div>
+      
+        <div class="pricing-box pricing-box-bg-image3 text-center" style="background-image: url('https://thecoconutpeople.in/cdn/shop/products/TCP-Coconut-Sugar-3_800x.webp?v=1673456508');">
+          <h5 style="padding-top: 30px; font-family: 'Protest Revolution', sans-serif;color: #000;">Coconut Sugar</h5>
+          <p class="price"><sup>$</sup>19<sub></sub></p>
+
+          <button class="btn-primary" style="font-family: 'Protest Revolution', sans-serif;">Buy Now</button>
+        </div>
+
+        <div class="pricing-box pricing-box-bg-image3 text-center" style="background-image: url('https://4.imimg.com/data4/ES/EW/MY-26909319/coconut-charcoal-briquette-500x500.jpg');">
+            <h5 style="padding-top: 30px; font-family: 'Protest Revolution', sans-serif;color: #000;">Coconut Briquettes </h5>
+            <p class="price"><sup>$</sup>20<sub></sub></p>
+  
+            <button class="btn-primary" style="font-family: 'Protest Revolution', sans-serif;">Buy Now</button>
+          </div>
+
+          <div class="pricing-box pricing-box-bg-image3 text-center" style="background-image: url('https://static.toiimg.com/thumb/60044803.cms?imgsize=248114&width=800&height=800');">
+            <h5 style="padding-top: 30px; font-family: 'Protest Revolution', sans-serif;color: #000;">Coconut Ice cream</h5>
+            <p class="price"><sup>$</sup>61<sub></sub></p>
+  
+            <button class="btn-primary" style="font-family: 'Protest Revolution', sans-serif;">Buy Now</button>
+          </div>
+
+          <div class="pricing-box pricing-box-bg-image3 text-center" style="background-image: url('https://tropicanaoil.com/wp-content/uploads/2022/11/tropicana-coconut-oil-toothpaste-570x570.jpg');">
+            <h5 style="padding-top: 30px; font-family: 'Protest Revolution', sans-serif;color: #000;">Coconut Toothpaste</h5>
+            <p class="price"><sup>$</sup>49<sub></sub></p>
+  
+            <button class="btn-primary" style="font-family: 'Protest Revolution', sans-serif;">Buy Now</button>
+          </div>
+      
+      
+
+      </div>
+      </div>
+    </section>
+      
+</body>
+</html>
